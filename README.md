@@ -21,13 +21,14 @@ Next, you need to choose a solver that is supported bu yalmip, and can solve sem
 In the silicin example and in the paper, mosek solver was used.
 
 #### Mex files
+Fot optimization's running time reduction purposes, a mex file was generated. If you are using a Windows 64 bit, then no further action is needed. Otherwise you need to mex the cpp file located in Utils\mincutMex.cpp.
 
 ### Downloads
-Clone the repository and work from the project directory.
+Clone the repository and work from the project directory. Add to the path the folders Utils, Core and Data_structure.
 
 ## Running 
 ### Silicon example
-After adding yalmip, mosek and mexing the mincut file, type in the command window:
+After adding yalmip, mosek and mexing the mincutMex file, type in the command window:
 ```
 silicon_example
 ```
