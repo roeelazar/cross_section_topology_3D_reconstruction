@@ -16,25 +16,25 @@ Beside the core engine, an example is attached.
 The code is compatible with MATLAB 2018a.
 
 #### Additional tools
-In order to run the code, one should download [Yalmip optimization package](https://yalmip.github.io/download/) and add in to your path.
-Next, you need to choose a solver that is supported bu yalmip, and can solve semidefinite progrem.
+In order to run the code, one should download [Yalmip optimization package](https://yalmip.github.io/download/) and add in to the path.
+Next, you need to choose a solver that is compatible with yalmip, and semidefinite programming (more information [here](https://yalmip.github.io/allsolvers/)).
 In the silicin example and in the paper, mosek solver was used.
 
 #### Mex files
-Fot optimization's running time reduction purposes, a mex file was generated. If you are using a Windows 64 bit, then no further action is needed. Otherwise you need to mex the cpp file located in Utils\mincutMex.cpp.
+For optimization's running time reduction purposes, a mex file was generated. If you are using a Windows 64 bit, then no further action is needed. Otherwise you need to mex the cpp file located in Utils\mincutMex.cpp.
 
 ### Downloads
 Clone the repository and work from the project directory. Add to the path the folders Utils, Core and Data_structure.
 
 ## Running 
 ### Silicon example
-After adding yalmip, mosek and mexing the mincutMex file, type in the command window:
+After all the above was executed, type in the command window:
 ```
 silicon_example
 ```
 
-### Preparing a New Database
-To create a new database first formulate your problem as mentioned in the documentaion of Core\BnBOptimization,
+### Preparing a reconstruction problem
+To generate a new problem, first formulate your problem as mentioned in the documentaion of Core\BnBOptimization,
 then generate BnBroot type and insert it to BnBOptimization(BnBroot).
 
 ## Running time note
