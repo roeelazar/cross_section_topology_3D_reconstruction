@@ -12,16 +12,14 @@ Beside the core engine, an example is attached.
 ## Getting Started
 
 ### Setting up the environment
-#### Network
 The code is compatible with MATLAB 2018a.
 
 #### Additional tools
-In order to run the code, one should download [Yalmip optimization package](https://yalmip.github.io/download/) and add in to the path.
-Next, you need to choose a solver that is compatible with yalmip, and semidefinite programming (more information [here](https://yalmip.github.io/allsolvers/)).
-In the silicin example and in the paper, mosek solver was used.
+In order to run the code, one should download [Yalmip optimization package](https://yalmip.github.io/download/) and add it to the path.
+Next, a solver that is compatible with yalmip and semidefinite programming should be installed. In the silicon example and in the paper mosek (free for academic use) was used (information about other solvers can be found [here](https://yalmip.github.io/allsolvers/)).
 
 #### Mex files
-For optimization's running time reduction purposes, a mex file was generated. If you are using a Windows 64 bit, then no further action is needed. Otherwise you need to mex the cpp file located in Utils\mincutMex.cpp.
+For optimization running time reduction purposes, a mex file was generated. If you are using a Windows 64 bit, then no further action is needed. Otherwise you need to mex the cpp file located in Utils\mincutMex.cpp.
 
 ### Downloads
 Clone the repository and work from the project directory. Add to the path the folders Utils, Core and Data_structure.
